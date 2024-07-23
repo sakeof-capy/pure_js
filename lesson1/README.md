@@ -1,4 +1,5 @@
-# Homework 1:
+# Homework 1
+
 1.  Create separate branch.
     - Push the "Homework 0" (done previously) to lesson0/homework.js to it.
     - Create pull request for the created branch. 
