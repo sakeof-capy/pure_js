@@ -1,3 +1,4 @@
 # Pure JS learning process.
 
-## Homework 1
+## Homework Tasks List:
+- [Homework 1](https://github.com/sakeof-capy/pure_js/blob/main/lesson1/README.md)
