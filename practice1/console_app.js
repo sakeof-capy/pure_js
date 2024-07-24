@@ -24,12 +24,16 @@ async function read_user_info_object(read_input) {
     let keep_running = true;
 
     while (keep_running) {
+        io.write_console_ouput(messages.HASHTAG_DELIMITOR_START);
+
         const characteristic_name = await read_input(messages.ENTER_CHARACTERISTIC_NAME_MESSAGE);
         const formatted_value_request = format(messages.ENTER_CHARACTERISTIC_VALUE_MESSAGE_FORMAT, characteristic_name);
         const characteristic_value = await read_input(formatted_value_request);
         
         accumulated_object[characteristic_name] = characteristic_value;
         keep_running = await ask_if_continue_filling_user_info(read_input);
+        
+        io.write_console_ouput(messages.HASHTAG_DELIMITOR_END);
     }
 
     return accumulated_object;
@@ -40,7 +44,9 @@ function map_input_to_output(user_info, user_info_input_handler, user_info_input
         return messages.INVALID_INPUT_ERROR_MESSAGE;
     }
 
-    return user_info_input_handler(user_info);
+    const handled_user_info = user_info_input_handler(user_info);
+    const successful_output = messages.RESULT_OUTPUT_MESSAGE + handled_user_info;
+    return successful_output;
 }
 
 async function ask_if_continue_filling_user_info(read_input) {
