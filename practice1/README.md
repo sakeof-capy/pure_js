@@ -13,9 +13,9 @@ You are provided with a mostly implemented console app. It is designed to user i
 - each string (either key or value) starts with a capital letter or a digit.
 
 Example of validating a user info:
-`{ "Age": "18" }` is invalid (because there's no "Name");
-`{ "age": "19", "Name": "Gogi" }` is invalid (because "age" is not capitalized);
-`{ "Age": "20", "Name": "Gogi" }` is valid.
+- `{ "Age": "18" }` is invalid (because there's no "Name");
+- `{ "age": "19", "Name": "Gogi" }` is invalid (because "age" is not capitalized);
+- `{ "Age": "20", "Name": "Gogi" }` is valid.
 
 User inputs this User Info and the app validates user's input and handles it (maps to an output). The output of handling a VALIDATED user info is the representation of the user info satisfying the conditions:
 - each key is capitalized;
@@ -26,9 +26,9 @@ User inputs this User Info and the app validates user's input and handles it (ma
 If the behaviour of handling an INVALID user info is undefined.
 
 Example of handling a user info:
-`{ "Age": "20", "Name": "Gogi", "Interest": "Sausages" }` -> `"AGE - 20; NAME - Gogi; INTEREST - Sausages."`
-`{ "Age": "19" }` -> `"AGE - 19."`
-`{}` -> `""`
+- `{ "Age": "20", "Name": "Gogi", "Interest": "Sausages" }` -> `"AGE - 20; NAME - Gogi; INTEREST - Sausages."`
+- `{ "Age": "19" }` -> `"AGE - 19."`
+- `{}` -> `""`
 
 ## Usage
 
