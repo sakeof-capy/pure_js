@@ -1,0 +1,12 @@
+{
+  "name": "practice1",
+  "version": "1.0.0",
+  "description": "console app handling user-info input",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
