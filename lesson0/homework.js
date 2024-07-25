@@ -46,7 +46,8 @@ for (let i = 1; i <=100; i ++) {
 
 if (SerduckInfo.age > 5000) {
     SerduckInfo.description = "YOu are gay"
-} else { SerduckInfo.description = "Looking for Diana"
+} else {
+    SerduckInfo.description = "Looking for Diana"
 }
 
 let SerducksStrings = "";
