@@ -55,24 +55,46 @@ let SerducksStrings = "";
 for (i = 0; i < SerduckInfo.names.length; i++) {
     SerducksStrings += SerduckInfo.names[i] + ", "
 }
-// console.log(SerduckInfo)
-// console.log(SerducksStrings)
+
 
 // Home work
 // 1. Make SerducksStrings end with dot instead of comma;
 // 2. Create SerducksNewLineStrings that have new line characters instead of commas;
-// 3. Recall what a forEach loop is in JS;
 
 
 // 1.
 
-    SerducksStrings = SerducksStrings.replace(/,/g, ".");
-    console.log(SerducksStrings, '//SerducksStrings end with dot instead of comma')
+// SerducksStrings = SerducksStrings.replace(/,/g, ".");
+
+let DottedSerducksStrings = "";
+
+for (let i = 0; i < SerducksStrings.length; i++) {
+    if (SerducksStrings[i] !== ",") {
+        DottedSerducksStrings += SerducksStrings[i] 
+    } else {
+        DottedSerducksStrings += "."   
+    } 
+}
+
+console.log(SerducksStrings, '//SerducksStrings end with dot instead of comma')
+console.log(DottedSerducksStrings, '//DottedSerducksStrings')
 
 // 2.
 
-    let SerducksNewLineStrings = SerducksStrings.replace(/[.]/g, ' &')
-    console.log(SerducksNewLineStrings, '//SerducksNewLineStrings that have new line characters instead of commas')
+let NewLinedSerducksStrings = "";
+
+for (let i = 0; i < SerducksStrings.length; i++) {
+    if (SerducksStrings[i] !== ",") {
+        NewLinedSerducksStrings += SerducksStrings[i] 
+    } else {
+        NewLinedSerducksStrings += " \n"   
+    } 
+}
+
+console.log(NewLinedSerducksStrings, '//NewLinedSerducksStrings')
+
+let SerducksNewLineStrings = SerducksStrings.replace(/,/g, ' \n')
+console.log(SerducksNewLineStrings, '//SerducksNewLineStrings that have new line characters instead of commas')
 
 
 
