@@ -1,0 +1,12 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "user_with_pet_app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node user_with_pet_app.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
