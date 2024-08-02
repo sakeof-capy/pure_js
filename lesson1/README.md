@@ -30,4 +30,4 @@
         - Print all the keys of the level 1 nested objects: `field_a field_aa field_b field_bb field_c field_cc field_d field_dd field_e field_ee field_f field_ff field_g field_gg field_h field_hh field_i field_ii field_jj`.
         - Print all the values of the `{ i1: "fuck_i", h2: "i_i_i" }` object that is nested inside `some_big_nested_stuff`: `fuck_i`, `i_i_i`
         - (Advanced) Print all the values that are wrapped in quotes in the exact following order: `aaaa, 2_aa, fuck_a, a_a_a, bbbb, 2_bb, fuck_b, b_b_b, ...`
-        - Note: It's forbidden to hardcode the wanted values (you can't do `console.log("a b c d e f g h i j")` to do the 3.4.1 step)! Use all the known for-loops.
+        - Note: It's forbidden to hardcode the wanted values (you can't do `console.log("a b c d e f g h i j")`)! Use all the known for-loops.
